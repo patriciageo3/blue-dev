@@ -1,0 +1,564 @@
+
+* {
+	margin: 0 auto;
+	text-align: left;
+}
+
+
+body {
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	font-size: 17px;
+	font-family: Calibri, Arial, Sans-Serif;
+	color:#000000;
+	background:#1c478e url(../images/background.png) repeat-x;
+}
+
+h2{
+	padding-bottom: 10px;
+}
+
+ h3, h4 {
+	font-size: 19px;
+	font-weight:bold;
+	padding: 10px 0; 
+	color:#054dbc;
+    margin-top: 7px;
+	
+}
+
+button, input[type="submit"], .reset {     
+    background-color: #00001a; /* older browsers */
+    background: -moz-linear-gradient(40deg, #00001a, #1C478E); /* FF3.6+ */
+    background: -webkit-gradient(40deg, #00001a, #1C478E); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(40deg, #00001a, #1C478E); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(40deg, #00001a, #1C478E); /* Opera 11.10+ */
+    background: -ms-linear-gradient(40deg, #00001a, #1C478E); /* IE10+ */
+    background-color: linear-gradient(40deg, #00001a, #1C478E);
+    border: 2px solid #1C478E;
+    font-size: 15px;
+    color: #ffffff;
+    cursor: pointer;
+    border-bottom: 2px solid black;
+    border-radius: 6px;
+}
+
+button:active, input[type="submit"]:active {     
+    font-weight: bold;
+    color: #6666ff;
+    cursor: pointer;
+}
+
+#content {
+	overflow: hidden;
+}
+
+#container {
+	width: 70%;
+    margin: 0 auto;
+}
+
+#main-page::after {
+	content: "";
+	clear:both;
+	display:block;
+}
+
+header {
+	width: 100%;
+	height: 85px;
+}
+
+header h1 {
+	float: left;
+	color: #ffffff;
+	font-size: 43px;
+	padding: 20px 0 0 13px;
+}
+
+header h2{
+	float: right;
+	color: #ffffff;
+	padding: 40px 0 0 0;
+}
+
+span[class*="blue"]{
+	color: #67A0F5;
+}
+
+#nav {
+   overflow: auto;
+}
+
+#nav ul {
+	padding: 18px 0 0 0;
+	width: 80%;
+	margin-left: 0;
+    display: inline-block;
+}
+
+#nav li {
+	list-style: none;
+	display: inline-block;
+}
+
+#nav a {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	color: #ffffff;
+	padding: 0 13px;
+}
+
+#nav a:hover {
+    color: #ccccff;
+} 
+
+#nav a:active {
+    color:#6666ff;
+}
+
+#nav .active, #customSkills .active {
+    color: #ccccff;
+}
+
+#greeting {
+    color: #ffffff;
+    font-size: 15px;
+    font-style: italic;
+    float: right;
+    display: inline-block;
+    padding: 18px 0 0 0;
+}
+
+#navleft {
+	margin-top: 30px;
+	width: 20%;
+	float: left;
+	background-color: #1C478E;
+	border-radius: 10px;
+	padding: 15px 20px 10px 10px;
+}
+
+#navleft ul {
+	list-style: none;
+	padding: 0;
+}
+
+#navleft li {
+	padding: 15px 0 8px;
+	border-bottom: 1px dashed #ffffff;
+}
+
+#navleft a {
+	text-decoration: none;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+#navleft a:hover {
+    color: #ccccff;
+} 
+
+#navleft a:active {
+    color:#6666ff;
+}
+
+#navleft h3 {
+	color: #ffffff;
+	padding: 0 0 8px;
+	border-bottom: 2px solid #ffffff;
+	font-size: 16px;
+}
+
+#navleft h3.newsletter {
+    padding-top: 40px;
+}
+
+#navleft form, #navleft p {
+    color: #ffffff;
+}
+
+#navleft p {
+    margin-top: 10px;
+    font-size: 13px;
+}
+
+#navleft label {
+    margin-top: 3px;
+}
+
+.reset,  #unsubscribe, #changeInfo {
+    font-size: 10px;
+    display: block;
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p#confirmSub, #unsubscribe, #changeInfo {
+    display: none;
+}
+
+section {
+	width: 90%;
+	float: left;
+	border: 6px solid #1C478E;
+	margin-top: 30px;
+	background: #ffffff;
+	border-radius: 10px;
+	padding: 15px;
+	margin-left:15px;
+}
+
+section .developer a {
+    text-decoration:none;
+    color: #000000;
+    font-size: 12px;
+}
+
+section .developer a:hover {
+    color: #1C478E;
+}
+
+section .developer a:active {
+    color: #6666ff;
+}
+
+.float {
+	float: right;
+	margin: 15px;
+}
+
+.developer {
+	width: 25%;
+	display: inline-block;
+}
+
+.developer ul {
+	list-style: none;
+	padding:0;
+	line-height: 1.7em;
+}
+
+div #btns {
+    width: 400px;
+    margin-left: 0;
+    text-align: center;
+}
+
+/* FOOTER */
+#copyright {
+	font-size: 12px;
+	color: #ffffff;
+	float: left;
+    padding-left: 13px;
+}
+
+#slogan{
+	font-size: 12px;
+	color: #ffffff;
+    font-style: italic;
+    float: right;
+}
+
+footer {
+	width: 100%;
+	height: 30px;
+    background-color: #00001a;
+	text-align: center;
+	padding-top: 10px;
+    margin-top: 30px;
+}
+
+footer div {
+    width: 70%;
+    overflow: auto;
+    margin-top: 4px;
+}
+
+/*developers page */
+
+table, tr, td, th {
+	margin: 0;
+}
+
+table{
+	padding: 10px 0;
+    width: 90%;
+}
+
+th {
+	text-align: center;
+}
+
+td {
+	padding: 5px 20px;
+}
+
+table.dev-table tr, table.dev-table td, table.dev-table th, table.skillOutput tr, table.skillOutput td, table.skillOutput th {
+	font-size: 15px;
+	border-bottom: 1px dashed #000000;
+}
+
+#searchSection label {
+    width: 40px;
+    margin-left: 5px;
+}
+
+#searchSection p {
+    text-align: center;
+}
+
+#searchBtn {
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#centerMe {
+    width: 40%;
+}
+
+#noDevs, #backBtn {
+    display: none;
+}
+
+#backBtn {
+    margin-left: 0;
+    margin-top: 10px;
+}
+
+
+/*CONTACT PAGE*/
+
+label {
+	display: inline-block;
+	width: 150px;
+	margin-top: 20px;
+}
+
+fieldset {
+	margin: 12px 0;
+    width: 70%;
+}
+
+span#required {
+    color: #cc0052;
+}
+
+p.note {
+    font-style: italic;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+
+section form h4 {
+    padding-top: 0;
+}
+
+#yourProject {
+    margin-top: 19px;
+}
+
+#yourProject p span {
+    margin: 0 10px;
+    vertical-align: super;
+    font-size: 15px;
+}
+
+#textInput {
+    width: 50px;
+    display: inline-block;
+}
+
+/** Become DEV page **/
+
+form#signUp {
+    width: 100%;
+}
+
+#map {
+	width:100%;
+	height:250px;
+}
+
+fieldset.fieldDev {
+    width:100%;
+}
+
+img.fieldDev {
+   width: 35%;
+   float: right;
+   display: inline-block;
+   margin-right: 40px;
+}
+
+section#signUpCase {
+    width: 40%;
+    float: left;
+    border: none;
+    margin: 0;
+}
+
+.searchOutput {
+    display: none;
+}
+
+#zeroSearch {
+    display: none;
+}
+
+/* Skills pages */
+
+#database2 {
+    display: none;
+}
+
+.summary {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.skillOutput, #result {
+    display: none;
+}
+
+@media all and (max-width: 1620px) {
+    img.fieldDev {
+        margin-top: 15%;
+    }
+}
+
+@media all and (max-width: 1290px) {
+    #container {
+        width: 90%;
+    } 
+    
+    img.fieldDev {
+        margin-top: 0;
+    }
+    
+    input[type="range"], span.value {
+        display: none;
+    }
+}
+
+@media all and (max-width: 1090px) {    
+    .developer li {
+        font-size: 12px;
+    }
+    
+    img.fieldDev {
+        display: none;
+    }
+    
+    section #signUpCase {
+        width: 70%;
+    }
+    
+    p#greeting {
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 850px) {
+    
+    form.newsletter input[type="text"], form.newsletter input[type="email"]  {
+        width: 120px;
+    }
+    
+    body {
+        font-size: 15px;
+    }
+    
+    header h1 {
+        font-size: 37px;
+    } 
+    
+    header h2 {
+        font-size: 20px;
+    }
+    
+    #nav a{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 670px) {
+    #nav {
+        margin-top: -10px;
+    }
+    
+    body {
+        font-size: 12px;
+    }
+    
+    header h2 {
+        font-size: 12px;
+    }
+    
+    #navleft {
+        float: none;
+        width: 60%;
+        margin: 30px auto 0 auto;
+
+    }
+    
+    section, section#signUpCase {
+        float: none;
+    }
+    
+    #navleft li {
+        display: inline-block;
+        padding: 15px 0 8px;
+        border-bottom: none;
+        padding: 10px;
+        height: 15px;
+    }
+    
+    label {
+        width: 80px;
+    }
+    
+    section img {
+        width: 40%;
+    }
+}
+
+@media all and (max-width: 490px) {
+    header h1 {
+        font-size: 23px;
+    } 
+    
+    header h2 {
+       display: none;
+    }
+    
+    #nav ul {
+        width: 90%;
+    }
+    
+    p#greeting {
+        display: none;
+    }
+    
+    body {
+        font-size: 10px;
+    }
+    
+    table.dev-table tr, table.dev-table td, table.dev-table th, table.skillOutput tr, table.skillOutput td, table.skillOutput th {
+        font-size: 10px;
+    }
+    
+    #nav a {
+        font-size: 12px;
+    }
+    
+    #navleft a{
+        font-size: 12px;
+    }
+
+}
